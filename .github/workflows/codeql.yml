@@ -22,12 +22,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - language: javascript-typescript
+          - language: php
             build-mode: autobuild
-          - language: python
-            build-mode: autobuild
-          - language: java-kotlin
-            build-mode: manual  # example, use manual if autobuild fails
           # Add more languages as needed, like:
           # - language: c-cpp
           #   build-mode: manual
