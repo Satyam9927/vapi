@@ -59,6 +59,8 @@ services:
         ports: 
             - "3306:3306"
         command: --default-authentication-plugin=mysql_native_password
+        security_opt:
+            - no-new-privileges:true
         environment:
             MYSQL_DATABASE: vapi
             MYSQL_USER: vapi
